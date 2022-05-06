@@ -3,74 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML</title>
-    <link rel="icon" href="green-background.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
   </head>
-  <style>
-    body 
-    {
-      background-image: url(green-background.jpg);
-    }
-    .vertical {
-      border-right: 5px solid black;
-      height: 100%;
-      position: fixed;
-      left: 80%;
-      top: 0;
-      bottom: 0;
-    }
-        
-  </style>
   <body>
-    <div class="sidebar" style="float:right; padding-right: 120px;">
-      <h1 >Índice</h1>
-      <p><a href="#Sobre">Sobre</a></p>
-      <p><a href="#Habilidades">Habilidades</a></p>
-      <p><a href="#Sites">Sites Uteis</a></p>
-      <p style="position: fixed; bottom: 0"><a href="#Inicio">Voltar para o ínicio</a></p>
-    </div>
-    <h1 style="text-align: center" id="Inicio">Jadson do Carmo Moreira</h1>
-    <div class= "vertical"></div>
+<!-- INDICE SIDEBAR-->
+<aside class="side-index">
+  <h1>Índice</h1>
+  <p><a href="#Sobre">Sobre</a></p>
+  <p><a href="#Habilidades">Habilidades</a></p>
+  <p><a href="#Sites">Sites Uteis</a></p>
+  <p style="position: fixed; bottom: 0; padding-left: 6%;"><a href="#Inicio">Voltar para o ínicio</a></p>
+</aside>
+    <main>
+<!-- NOME E FOTO-->
+    <section style="width: 80%;">
+    <h1 style="text-align: center;font-weight: normal;font-family:'Fredoka One', cursive;" id="Inicio" >Jadson do Carmo Moreira</h1>
     <img
       src="foto perfil.jpg"
       alt="foto de perfil"
       width="240"
-      style="float: left; padding: 25px; border-radius: 50%"
-    />
-    <h2><br /><a id="Sobre">Sobre Mim</a></h2>
-    <p style="font-size: 20px">
-      Sou <strong>Estudante de Desenvolvimento Web na Trybe </strong>e formado
-      em <br />Tecnologia em Análise e Desenvolvimento de Sistemas na
-      <strong>UNIABEU</strong>.<br/><br />Natural brasileiro, nascido e criado em <em>
-        Nova Iguaçu,
-        Rio de Janeiro
-      </em>.<br /><br />Seguindo a tradição da família sou apaixonado
-      por Jogos e conteúdos de ficcão,<br />
-      e além disso que mais gosto de fazer é passar o tempo com os amigos,<br />
-      e socializar, conhecer gente nova e compartilhar experiências.
-    </p>
-    <div style="clear: both"></div>
-    <h3 style="padding-left: 25px" id="Habilidades">Habilidades</h3>
-    <ul style="padding-left: 50px;line-height: 30px;font-size: 17px;">
-      <li><a>Inglês</a></li>
-      <li><a>Git</a></li>
-      <li><a>GitHub</a></li>
-      <li><a>HTML</a></li>
-      <li><a>CSS</a></li>
-    </ul>
-    <br /><br /><br />
-    <h3 id="Sites">Sites Úteis</h3>
-    <p>
-      Tenho usado bastante o site
-      <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>,
-      para entender melhor o funcionamento de alguns códigos e flags.<br />
-      Também acesso
-      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> e o
-      <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks</a>
-      para aprimorar meu conhecimento em HTML, CSS e JavaScript
-    </p>
-    <br /><br /><br />
-    <a href="https://www.google.com/" target="_blank">Clique aqui</a> para
-    acessar o Google! Seja la qual for o motivo...
-    <div></div>
+      style="float: left; padding: 30px; border-radius: 50%"/>
+    </section>
+<!-- AREA SOBRE MIM-->
+      <section id="sobremim">
+        <div class="groove-bottom" id="Sobre"></div>
+        <h2><br/><a >Sobre Mim</a></h2>
+        <p style="font-size: 20px;">
+          Sou <strong>Estudante de Desenvolvimento Web na Trybe </strong>e formado
+          em <br />Tecnologia em Análise e Desenvolvimento de Sistemas na
+          <strong>UNIABEU</strong>.<br/><br />Natural <em>brasileiro</em>, nascido e criado em <em>
+            Nova Iguaçu,
+            Rio de Janeiro.
+          </em><br /><br />Seguindo a tradição da família sou apaixonado
+          por Jogos, e fã de ficcão cíentifica,<br/>
+          adoro ciência, astrofísica, astronomia e tudo relacionado ao nosso vasto universo,<br> também amo passar o tempo com os amigos, e gosto de conhecer pessoas novas, <br> compartilhar experiências, histórias e principalmente ajudar o próximo.
+        </p>
+        <br>
+        <div class="groove-bottom"></div>
+      </section>
+<!-- HABILIDADES -->
+    <section class="Habilidades" id="Habilidades" style="width: 80%;" >
+      <h3 style="padding-left: 25px">Habilidades</h3>
+      <ul style="padding-left: 50px;line-height: 30px;">
+        <li><a>Inglês</a></li>
+        <li><a>Git</a></li>
+        <li><a>GitHub</a></li>
+        <li><a>HTML</a></li>
+        <li><a>CSS</a></li>
+      </ul>
+      <br/>
+      <div class="groove-bottom"></div>
+    </section>
+<!-- SITES UTEIS -->
+    <section class="sites-uteis" id="Sites" style="width: 80%;">
+      <h3 >Sites Úteis</h3>
+      <p>
+        Tenho usado bastante o site
+        <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>,
+        para entender melhor o funcionamento de alguns códigos e flags.<br />
+        Também acesso
+        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> e o
+        <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks</a>
+        para aprimorar meu conhecimento em HTML, CSS e JavaScript
+      </p>
+    </section>
+  </main>
   </body>
 </html>
