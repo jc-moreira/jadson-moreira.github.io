@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: Ubuntu, sans-serif;
+  height: 100%;
+  margin-top: 7%;
+  margin-left: 3%;
+}
+
+p , ul , ol , h3 {
+  font-size: 18px;
+}
+
+ul , ol {
+  line-height: 23px;
+}
+
+header {
+  z-index: 2;
+  color: rgb(17, 17, 17);
+}
+
+
+#sidebar {
+  background-color: rgb(172, 172, 172);
+  height: 100%;
+  width: 3%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  margin-right: 20%;
+}
+
+.linha_horizontal {
+  border-style: solid;
+  border-color: rgb(104, 104, 104);
+  border-bottom: 6px;
+  margin-bottom: 2%;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(104, 104, 104);
+}
+
+#titulo {
+  text-align: center;
+}
+
+#minha_foto {
+  width: 240px;
+  border-radius: 50%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(177, 177, 177);
+  display: inline-block;
+}
+
+table , th , td {
+  border: 1px solid rgb(104, 104, 104);
+  border-collapse: collapse;
+  width: 15%;
+  font-size: large;
+}
+
+#tabela {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 8%;
+  margin-left: 5%;
+}
+
+#social_media {
+  position: absolute;
+  right: 600px;
+}
+
+#lado-esquerdo {
+  padding-right: 2%;
+}
+
+#lado-direito {
+  padding-right: 2%;
+  margin-bottom: 3%;
+}
+
+.lado-esquerdo {
+  margin-left: 3%;
+  max-width: 50%;
+  display: inline-block;
+}
+
+.lado-direito {
+  display: inline-block;
+  position: absolute;
+  max-width: 50%;
+  margin-left: 3%;
+}
+
+#rodape {
+  background-color: rgb(104, 104, 104);
+  position: absolute;
+  left: 0;
+  width: 95%;
+  padding-top: 10px;
+  z-index: 3;
+  padding-left: 5%;
+}
+
+#inicio {
+  top: 0;
+  position: absolute;
+}
+
+.botao_inicio {
+  display: block;
+  float: right;
+  width: 40%;
+  color: aliceblue;
+}
